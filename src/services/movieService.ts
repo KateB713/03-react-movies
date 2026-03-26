@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// const TOKEN = import.meta.env.VITE_TMDB_TOKEN;
 const TOKEN = import.meta.env.VITE_TMDB_TOKEN;
 
 export const searchMovies = async (query: string) => {
