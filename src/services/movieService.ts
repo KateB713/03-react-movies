@@ -9,7 +9,8 @@ interface TMDBResponse {
 
 export const searchMovies = async (query: string): Promise<Movie[]> => {
   const response = await axios.get<TMDBResponse>(
-    'https://api.themoviedb.org/3/search/movie',
+    // 'https://api.themoviedb.org/3/search/movie',
+    '/api/search/movie',
     {
       params: {
         query: query,
